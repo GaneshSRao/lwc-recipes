@@ -2,12 +2,12 @@
     <lightning-layout vertical-align="center">
         <lightning-layout-item>
             <div class="slds-align--absolute-center">
-                <div class="container green big">
+                <div class={containerClass}>
                     <span>
                         {percentage}%
                     </span>
                     <div class="slice">
-                        <div class="bar"></div>
+                        <div class="bar" style={rotationStyle}></div>
                         <div class="fill"></div>
                     </div>
                 </div>

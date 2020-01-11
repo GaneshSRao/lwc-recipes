@@ -1,16 +1,8 @@
-.clearFloats:before,
-.clearFloats:after {
-    content: ' ';
-    display: table !important;
-}
-
-.clearFloats:after {
-    clear: both;
-}
-.clearFloats {
-    *zoom: 1;
-}
-
+.legend{
+        font-size: 1.25rem;
+        color: rgb(22, 50, 92);
+    }
+    
 .container .slice,
 .container.p50plus .slice {
     clip: rect(auto, auto, auto, auto);

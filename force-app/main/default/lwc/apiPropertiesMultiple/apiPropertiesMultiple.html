@@ -12,8 +12,18 @@
                 value={percentage}
                 onchange={handlePercentageChange}
             ></lightning-input>
+            <lightning-combobox
+                name="theme"
+                label="Theme"
+                placeholder="Choose Theme"
+                value={themeValue}
+                onchange={handleThemeChange}
+                options={themeOptions}
+            >
+            </lightning-combobox>
             <c-circular-progress-bar
                 percentage={percentage}
+                theme={themeValue}
             ></c-circular-progress-bar>
         </div>
     </lightning-card>
