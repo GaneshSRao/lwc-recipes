@@ -15,8 +15,22 @@ export default class ApiPropertiesMultiple extends LightningElement {
     @track
     themeValue = 'blue';
 
+    @track
+    sizeOptions = [
+        { value: 'small', label: 'Small' },
+        { value: 'medium', label: 'Medium' },
+        { value: 'big', label: 'Big' }
+    ];
+
+    @track
+    sizeValue = 'medium';
+
     handleThemeChange(event) {
         this.themeValue = event.target.value;
+    }
+
+    handleSizeChange(event) {
+        this.sizeValue = event.target.value;
     }
 
     handlePercentageChange(event) {

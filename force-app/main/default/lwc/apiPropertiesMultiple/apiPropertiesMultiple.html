@@ -21,9 +21,19 @@
                 options={themeOptions}
             >
             </lightning-combobox>
+            <lightning-combobox
+                name="size"
+                label="Size"
+                placeholder="Choose Size"
+                value={sizeValue}
+                onchange={handleSizeChange}
+                options={sizeOptions}
+            >
+            </lightning-combobox>
             <c-circular-progress-bar
                 percentage={percentage}
                 theme={themeValue}
+                size={sizeValue}
             ></c-circular-progress-bar>
         </div>
     </lightning-card>
