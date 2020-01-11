@@ -1,7 +1,7 @@
 import { LightningElement, track } from 'lwc';
 
 export default class ApiPropertiesMultiple extends LightningElement {
-    @track 
+    @track
     percentage = 10;
 
     @track
